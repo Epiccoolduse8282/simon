@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: #1f1f1f;
+}
+
+.start-button {
+  display: block;
+  padding: 12px 32px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #444;
+}
+
+.square-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 20px;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+#clicked-square {
+  text-align: center;
+  font-size: 18px;
+}
